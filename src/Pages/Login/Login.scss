@@ -1,0 +1,35 @@
+@import '~@blueprintjs/core/dist/variables.scss';
+
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel Regular'), local('Cinzel-Regular'), url(Cinzel.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+.flex-frame {
+    &.center {
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            margin-bottom: 50px;
+            img { height: 60px; }
+            span { font-family: 'Cinzel'; }
+        }
+
+        .pt-card {
+            text-align: center;
+            .pt-input-group {
+                margin-bottom: $pt-grid-size;
+            }
+
+            form {
+                margin: 0;
+            }
+        }
+
+
+    }
+}

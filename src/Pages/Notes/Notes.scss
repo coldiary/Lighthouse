@@ -1,0 +1,39 @@
+@import '~@blueprintjs/core/dist/variables.scss';
+
+.Notes {
+    display: flex;
+    align-items: flex-start;
+
+    .list {
+        width: 200px;
+        margin-right: $pt-grid-size;
+        box-sizing: content-box;
+    }
+
+    .content {
+        margin-left: $pt-grid-size;
+        flex: 1;
+
+        .Note {
+            .trash-btn {
+                float: right;
+            }
+
+            .editor {
+                display: flex;
+                flex-direction: row;
+
+                .source, .preview {
+                    flex: 1;
+                    margin: 30px;
+                }
+
+                .preview {
+
+                    @import './github-markdown.css';
+
+                }
+            }
+        }
+    }
+}

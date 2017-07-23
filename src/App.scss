@@ -1,0 +1,40 @@
+@import '~@blueprintjs/core/dist/variables.scss';
+
+html, body {
+    margin: 0;
+}
+.pt-no-padding {
+    padding: 0;
+}
+
+.pt-toast-container.pt-toast-container-top.app-toaster {
+    top: $pt-navbar-height;
+}
+
+.pt-non-ideal-state {
+    height: inherit;
+}
+
+.flex-frame {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: $pt-app-background-color;
+
+    main {
+        flex: 1;
+        padding: 50px;
+    }
+
+    footer {
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.title {
+    font-family: 'Cinzel';
+}
